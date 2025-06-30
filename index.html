@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fathom Analytics Clone - Analytics simple et privé</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Fathom Analytics Clone</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="#dashboard" class="nav-link">Dashboard</a>
+                <a href="#features" class="nav-link">Fonctionnalités</a>
+                <a href="#pricing" class="nav-link">Tarifs</a>
+                <button class="btn-primary">Connexion</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Analytics simple et privé</h1>
+                <p>Clone fonctionnel de Fathom Analytics avec toutes les fonctionnalités principales.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary btn-large" onclick="startTrial()">Essai Gratuit</button>
+                    <button class="btn-secondary btn-large" onclick="showDemo()">Voir la Démo</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Fonctionnalités Principales</h2>
+                <div class="features-grid">
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Tracking simple</h3>
+                        <p>Implementation complète et fonctionnelle de tracking simple.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Tableaux de bord</h3>
+                        <p>Implementation complète et fonctionnelle de tableaux de bord.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Rapports en temps réel</h3>
+                        <p>Implementation complète et fonctionnelle de rapports en temps réel.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>API REST</h3>
+                        <p>Implementation complète et fonctionnelle de api rest.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="dashboard" class="dashboard-preview">
+            <div class="container">
+                <h2>Dashboard en Temps Réel</h2>
+                <div class="dashboard-container">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h3 id="users-count">2,847</h3>
+                            <p>Utilisateurs Actifs</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 id="revenue-count">€60k</h3>
+                            <p>Revenus Mensuels</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 id="growth-count">+24%</h3>
+                            <p>Croissance</p>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="analyticsChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <h2>Tarification Simple</h2>
+                <div class="pricing-card">
+                    <h3>Plan Pro</h3>
+                    <div class="price">€14<span>/mois</span></div>
+                    <ul class="features-list">
+                        <li>✓ Tracking simple</li><li>✓ Tableaux de bord</li><li>✓ Rapports en temps réel</li><li>✓ API REST</li>
+                        <li>✓ Support 24/7</li>
+                        <li>✓ API Access</li>
+                    </ul>
+                    <button class="btn-primary btn-large" onclick="subscribe()">Commencer</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Fathom Analytics Clone. Créé par STRAVIA Agents.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
